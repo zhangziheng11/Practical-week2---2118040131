@@ -1,20 +1,40 @@
-﻿// Practical-week2-张子恒-2118040131.cpp : 此文件包含 "main" 函数。程序执行将在此处开始并结束。
-//
+﻿#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
 
-#include <iostream>
 
-int main()
+/* The following are function declarations. They _declare_ that the functions exist but they do not _define_ what the functions actually do (the definitions appear after the main function). By declaring these functions here, they may be called in the main before they are defined.
+
+Note: function1 expects an int type, whereas function2 expects a pointer to an int */
+void function1(int);
+void function2(int*);
+
+int main() {
+	int number = 10;
+	/* C1. display the contents of number to the screen */
+
+	/* C2. display the address of variable number to the screen */
+
+	/* C3. call function1 */
+
+	/* C4. display the contents of number to the screen */
+
+	/* C5. call function2 */
+
+	/* C6. display the contents of number to the screen */
+	return 0;
+}
+void function1(int number)
 {
-    std::cout << "Hello World!\n";
+	/* C7. increment number by one */
+	/* C8. display the contents of number to the screen (should be 11) */
+	/* C9. display the address of number to the screen */
 }
 
-// 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
-// 调试程序: F5 或调试 >“开始调试”菜单
+void function2(int* numberPtr)
+{
+	/* C10. display the address of number to the screen (should be the same address as you displayed first in main) */
+	/* C11. display the value that the pointer numberPtr points to */
+	/* C12. increment the value stored in number */
 
-// 入门使用技巧: 
-//   1. 使用解决方案资源管理器窗口添加/管理文件
-//   2. 使用团队资源管理器窗口连接到源代码管理
-//   3. 使用输出窗口查看生成输出和其他消息
-//   4. 使用错误列表窗口查看错误
-//   5. 转到“项目”>“添加新项”以创建新的代码文件，或转到“项目”>“添加现有项”以将现有代码文件添加到项目
-//   6. 将来，若要再次打开此项目，请转到“文件”>“打开”>“项目”并选择 .sln 文件
+	/* C13. display the contents of number to the screen */
+}
